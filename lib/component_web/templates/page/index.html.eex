@@ -1,0 +1,17 @@
+<section class="phx-hero">
+  <h1><%= gettext "Welcome to %{name}!", name: "Phoenix" %></h1>
+  <p>Peace of mind from prototype to production</p>
+</section>
+
+<section class="row">
+  <div class="column">
+    <%= component Label, text: "Name", for: "name" %>
+    <%= component InputText, id: "name" %>
+  </div>
+</section>
+<section class="row">
+  <div class="column">
+    <%= component Label, text: "Country", for: "country" %>
+    <%= component Select, id: "country", options: [%{name: "Brazil", value: 1}, %{name: "United States", value: 2}] %>
+  </div>
+</section>
